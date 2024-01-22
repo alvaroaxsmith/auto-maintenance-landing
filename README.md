@@ -9,7 +9,6 @@ Certifique-se de ter o Node.js instalado em sua máquina e execute os seguintes 
 # Clone o repositório
 git clone https://github.com/alvaroaxsmith/auto-maintenance-landing.git
 
-
 # Instalar as dependências
 npm install
 
