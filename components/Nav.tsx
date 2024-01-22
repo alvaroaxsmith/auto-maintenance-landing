@@ -1,12 +1,29 @@
 // components/Nav.tsx
 import Link from 'next/link';
+import { IoConstructOutline } from 'react-icons/io5';
 
-const Nav: React.FC = () => {
+interface NavProps {
+  scrolled: boolean;
+}
+const Nav: React.FC<NavProps> = ({ scrolled }) => {
   return (
-    <nav className="bg-gray-700 p-4">
+    <nav>
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" passHref className="text-white text-xl font-bold" id="link">Home</Link>
-        {/* Adicione mais links conforme necessário */}
+        <div className="flex items-center space-x-4">
+          <IoConstructOutline></IoConstructOutline>
+          <Link href="/" className={`text-xl font-bold ${scrolled ? 'text-black' : 'text-white'}`}>
+            Auto Maintenance
+          </Link>
+        </div >
+        <div className="space-x-4">
+          <Link className={`text-xl font-bold ${scrolled ? 'text-black' : 'text-white'}`} href="#services">
+            Serviços
+          </Link>
+          <Link className={`text-xl font-bold ${scrolled ? 'text-black' : 'text-white'}`} href="#contact">
+            Contato
+          </Link>
+          {/* Adicione mais links conforme necessário */}
+        </div>
       </div>
     </nav>
   );

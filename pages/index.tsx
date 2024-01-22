@@ -24,8 +24,8 @@ const Home: React.FC = () => {
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
-        <ContactSection />
+        <ServicesSection id="services" />
+        <ContactSection id="contact" />
         {/* Adicione mais seções conforme necessário */}
       </main>
       <Footer />
