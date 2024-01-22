@@ -15,5 +15,6 @@ npm install
 
 # Iniciar o servidor de desenvolvimento
 npm run dev
+```
 
-Este projeto é licenciado sob a Licença MIT
+Este projeto é licenciado sob a Licença MIT.
