@@ -1,4 +1,3 @@
-// pages/index.tsx
 import Head from 'next/head';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
@@ -26,7 +25,6 @@ const Home: React.FC = () => {
         <HeroSection />
         <ServicesSection id="services" />
         <ContactSection id="contact" />
-        {/* Adicione mais seções conforme necessário */}
       </main>
       <Footer />
     </div>
