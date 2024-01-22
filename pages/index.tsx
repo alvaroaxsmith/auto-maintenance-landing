@@ -1,13 +1,36 @@
-import Link from "next/link";
-import Layout from "../components/Layout";
+// pages/index.tsx
+import Head from 'next/head';
+import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import ServicesSection from '../components/ServicesSection';
+import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-);
+const Home: React.FC = () => {
+  return (
+    <div>
+      <Head>
+        <title>Auto Maintenance - Serviços de Manutenção Automotiva</title>
+        <meta name="description" content="Oferecemos serviços de manutenção automotiva de alta qualidade. Entre em contato conosco para obter mais informações." />
+        <meta name="keywords" content="manutenção automotiva, serviços automotivos, mecânica de carros" />
+        <meta name="author" content="Nome da Sua Empresa" />
+        <meta property="og:title" content="Auto Maintenance - Serviços de Manutenção Automotiva" />
+        <meta property="og:description" content="Oferecemos serviços de manutenção automotiva de alta qualidade. Entre em contato conosco para obter mais informações." />
+        <meta property="og:image" content="/path/to/your/image.jpg" />
+        <meta property="og:url" content="https://www.seudominio.com/" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-export default IndexPage;
+      <Header />
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <ContactSection />
+        {/* Adicione mais seções conforme necessário */}
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;
