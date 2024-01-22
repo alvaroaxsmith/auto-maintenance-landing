@@ -20,13 +20,11 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 p-4 transition-all ${scrolled
-        ? 'bg-white bg-opacity-70'
-        : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 p-2 md:p-4 transition-all ${scrolled ? 'bg-white bg-opacity-70' : 'bg-transparent'
         }`}
     >
       <div className="container mx-auto">
-        <h1 className={`text-3xl font-bold ${scrolled ? 'text-black' : 'text-white'}`}>
+        <h1 className={`text-xl md:text-3xl font-bold ${scrolled ? 'text-black' : 'text-white'}`}>
           <Nav scrolled={scrolled} />
         </h1>
       </div>
