@@ -17,4 +17,4 @@ npm install
 npm run dev
 ```
 
-Este projeto é licenciado sob a Licença MIT.
+Este projeto é licenciado sob a [Licença MIT](https://github.com/alvaroaxsmith/auto-maintenance-landing/blob/main/LICENSE).
